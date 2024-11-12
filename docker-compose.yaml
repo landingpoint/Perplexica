@@ -1,5 +1,5 @@
 services:
-    searxng:
+  searxng:
     image: docker.io/searxng/searxng:latest
     volumes:
       - ./searxng:/etc/searxng:rw
