@@ -1,0 +1,23 @@
+[GENERAL]
+PORT = 3001
+SIMILARITY_MEASURE = "cosine"
+
+[API_KEYS]
+# Use environment variables for sensitive data
+OPENAI = "${OPENAI_API_KEY}"
+GROQ = ""
+ANTHROPIC = ""
+
+[API_ENDPOINTS]
+# Use the internal Docker network name for SearXNG
+SEARXNG = "http://searxng:8080"
+OLLAMA = ""
+
+[AUTH]
+# Add Azure AD authentication settings
+ENABLED = true
+PROVIDER = "azure"
+CLIENT_ID = "${AZURE_CLIENT_ID}"
+CLIENT_SECRET = "${AZURE_CLIENT_SECRET}"
+TENANT_ID = "${AZURE_TENANT_ID}"
+REDIRECT_URI = "https://app.asklandi.ai/api/auth/callback"
